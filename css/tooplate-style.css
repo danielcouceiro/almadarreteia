@@ -177,23 +177,21 @@ bootstrap.min.css:5
     }
 }
 
-
-
 /* HERO SLIDER */
 
 .slide-caption {
 	color: #fff;
 }
 
-.slide-caption span {
-	font-size: 14px;
-	text-transform: uppercase;
-}
-
-.slide-caption h2 {
+.cd-full-width h2 {
+	position: absolute;
+	top: 50%;
+	right: 10%;
+	transform: translateY(-50%);
 	font-size: 36px;
 	text-transform: uppercase;
-	font-weight: 900;
+	font-weight: bold;
+    text-shadow: -12px 11px 10px black;
 }
 
 .slide-caption p {
@@ -206,7 +204,33 @@ ul.cd-hero-slider {
 	margin-bottom: 0px!important;
 }
 
+#chef {
+	background-color: #f4f4f4;
+	padding: 80px 0px;
+}
+
+#chef .section-heading {
+	margin-bottom: 60px;
+}
+
 /* WHAT WE DO */
+
+#fixed_image {
+    background-image: url(../img/slide_01.png);
+    width: 100%;
+    height: 100%;
+    background-size: auto;
+    background-position: center bottom;
+    background-position-y: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#fixed_image img {
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+}
 
 #about {
 	background-color: #f4f4f4;
@@ -289,41 +313,6 @@ ul.cd-hero-slider {
 .fourth-service:hover .icon {
 	background-image: url(../img/fourth-service-white.png);
 }
-
-
-#what-we-do {
-	background-image: url(../img/what-we-do-bg.png);
-	width: 100%;
-	background-size: cover;
-	background-repeat: no-repeat;
-	padding: 80px 0px;
-	color: #fff;
-}
-
-#what-we-do .right-image img {
-	width: 100%;
-	overflow: hidden;
-}
-
-#what-we-do h4 {
-	font-size: 24px;
-	font-weight: 700;
-	letter-spacing: 0.5px;
-	line-height: 30px;
-	margin-bottom: 25px;
-}
-
-#what-we-do p {
-	margin-bottom: 30px;
-	color: #fff;
-}
-
-#what-we-do ul li {
-	display: inline-block;
-	margin-right: 15px;
-	margin-bottom: 15px;
-}
-
 
 
 /* PORTFOLIO */
@@ -927,9 +916,6 @@ body.lb-disable-scrolling {
 	}
 	.service-item {
 		margin-bottom: 30px;
-	}
-	#what-we-do .right-image {
-		margin-top: 60px;
 	}
 	#blog .pop {
 		top: 15%;
