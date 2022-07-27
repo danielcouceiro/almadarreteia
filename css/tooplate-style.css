@@ -224,7 +224,7 @@ ul.cd-hero-slider {
     background-image: url(../img/slide_01.png);
     width: 100%;
     height: 100%;
-    background-size: auto;
+    background-size: cover;
     background-position: center bottom;
     background-position-y: top;
     background-attachment: fixed;
