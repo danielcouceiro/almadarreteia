@@ -545,7 +545,18 @@ ul.cd-hero-slider {
 }
 
 #contact p {
-	color: #fff
+	color: #fff;
+	margin-bottom: 5px;
+}
+
+#contact .row .row {
+	margin-bottom: 30px;
+}
+
+#contact i {
+	color: #fff;
+	margin-bottom: 10px;
+	font-size: xx-large;
 }
 
 /* FOOTER */
