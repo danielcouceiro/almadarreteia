@@ -555,6 +555,10 @@ ul.cd-hero-slider {
 	margin-bottom: 5px;
 }
 
+#contact .gmap_canvas {
+	margin-bottom: 25px;
+}
+
 #contact .row .row {
 	margin-bottom: 30px;
 }
@@ -592,7 +596,7 @@ footer ul {
 
 footer ul li {
 	display: inline-block;
-	margin-left: 5px;
+	margin-right: 5px;
 }
 
 footer ul li a {
@@ -869,8 +873,17 @@ body.lb-disable-scrolling {
 	}
 }
 
+footer ul {
+	float: none;
+}
 
-@media (max-width: 1015px){
+@media (min-width: 992px){
+	footer ul {
+		float: right;
+	}
+}
+
+@media (max-width: 992px){
 	.slide-caption .content-caption p {
 		padding: 0 10%;
 	}
@@ -890,8 +903,5 @@ body.lb-disable-scrolling {
 	}
 	footer {
 		text-align: center;
-	}
-	footer ul {
-		float: none;
 	}
 }
