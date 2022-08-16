@@ -359,7 +359,7 @@ ul.cd-hero-slider {
 	display: none;
 }
 
-.project-item .big-image {
+.project-item .medium-image {
 	display: block;
 }
 
@@ -371,7 +371,7 @@ ul.cd-hero-slider {
 	.project-item .small-image {
 		display: block;
 	}
-	.project-item .big-image {
+	.project-item .medium-image {
 		display: none;
 	}
 	.project-item .hover-effect {
