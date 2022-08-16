@@ -858,6 +858,12 @@ footer ul {
 	margin: 0 50px;
 }
 
+@media (max-width: 768px) {
+	#cookie-banner .row {
+		margin: 0 10px;
+	}
+}
+
 #accept-button button:hover {
 	background-color: #808080;
 	color: #ffffff;
