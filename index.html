@@ -14,18 +14,40 @@
         <link rel="stylesheet" href="css/tooplate-style.css">
 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-
-         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-1JMYKEECC9"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-1JMYKEECC9');
-        </script>
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            // Define dataLayer and the gtag function.
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            
+            // Default ad_storage to 'denied' as a placeholder
+            // Determine actual values based on your own requirements
+            gtag('consent', 'default', {
+              'ad_storage': 'denied',
+              'analytics_storage': 'denied',
+            });
+            </script>
+            <!-- Google tag (gtag.js) -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-1JMYKEECC9">
+            </script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+            
+              gtag('js', new Date());
+              gtag('config', 'G-1JMYKEECC9');
+            </script>
+            
+            <!-- Update this section based on your business requirements. -->
+            <script>
+              function consentGranted() {
+                gtag('consent', 'update', {
+                  'ad_storage': 'granted',
+                  'analytics_storage': 'granted'
+                });
+              }
+            </script>
     </head>
 <body>
     <div class="header">
@@ -425,6 +447,7 @@
         $('#accept-button').on('click', function(event) {
             setCookie("cookieAcceptance", true, 730);
             $('#cookie-banner').fadeOut(400);
+            consentGranted();
         });
     });
 
