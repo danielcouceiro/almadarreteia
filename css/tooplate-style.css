@@ -864,6 +864,10 @@ footer ul {
 	}
 }
 
+#accept-button button {
+	background-color: #cccccc;
+}
+
 #accept-button button:hover {
 	background-color: #808080;
 	color: #ffffff;
